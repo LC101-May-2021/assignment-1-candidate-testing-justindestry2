@@ -43,7 +43,7 @@ function gradeQuiz(candidateAnswers) {
 function runProgram() {
   askForName();
   // TODO 1.1c: Ask for candidate's name //
-  console.log("Hello " + candidateName + " " + "!");
+  console.log("Hello " + candidateName + "" + "!");
 
 
   askQuestion();
