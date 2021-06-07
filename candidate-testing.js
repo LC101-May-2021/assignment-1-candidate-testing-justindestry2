@@ -163,8 +163,8 @@ for (let i=0; i < 5; i++){
   }
 
 
-grade / questions.length * 100
-console.log(`>>> Overall Grade: ${grade} (${grade} of 5 responses correct) <<<`);
+// grade / questions.length * 100
+console.log(`>>> Overall Grade: ${grade/ questions.length * 100} (${grade} of 5 responses correct) <<<`);
   if (grade >= 80){
     console.log(">>> Status: PASSED <<<")
   } else {
