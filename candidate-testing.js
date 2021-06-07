@@ -48,14 +48,14 @@ for (let i=0; i < 5; i++){
     if (candidateAnswers[i].toLowerCase() == correctAnswers[i].toLowerCase()){
       // console.log(grade);
       grade++
-      
+      gradeQuiz();
     }
     
   }
 
 finalGrade = grade / questions.length * 5
 
-console.log((`>>> Overall Grade: ${finalGrade / questions.length * 5} (${grade} of 5 responses correct) <<<`));
+console.log((`>>> Overall Grade: ${finalGrade / 5 * 100} (${grade} of 5 responses correct) <<<`));
   if (grade/questions.length * 100 >= 80){
     console.log(">>> Status: PASSED <<<")
   } else {
