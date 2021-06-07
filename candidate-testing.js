@@ -48,7 +48,7 @@ for (let i=0; i < 5; i++){
     if (candidateAnswers[i].toLowerCase() == correctAnswers[i].toLowerCase()){
       // console.log(grade);
       grade++
-      gradeQuiz();
+      
     }
     
   }
@@ -63,8 +63,8 @@ console.log((`>>> Overall Grade: ${finalGrade / 5 * 100} (${grade} of 5 response
     
   }
   
-
-  return grade;
+console.log(grade);
+return grade;
 
 }
 
