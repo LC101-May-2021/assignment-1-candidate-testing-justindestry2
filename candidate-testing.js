@@ -57,11 +57,12 @@ console.log(`>>> Overall Grade: ${grade / questions.length * 100} (${grade} of 5
     console.log(">>> Status: PASSED <<<")
   } else {
     console.log(">>> Status: FAILED <<<")
-    return gradeQuiz
+    
   }
   
    
   return grade;
+  return gradeQuiz;
 }
 
 
