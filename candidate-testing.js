@@ -47,22 +47,24 @@ for (let i=0; i < 5; i++){
     if (candidateAnswers[i].toLowerCase() == correctAnswers[i].toLowerCase()){
       // console.log(grade);
       grade++
+      
     }
+    
   }
 
 
-// grade / questions.length * 100
+
 console.log(`>>> Overall Grade: ${grade / questions.length * 100} (${grade} of 5 responses correct) <<<`);
   if (grade/questions.length * 100 >= 80){
     console.log(">>> Status: PASSED <<<")
   } else {
     console.log(">>> Status: FAILED <<<")
-    
+    return gradeQuiz;
   }
   
    
   return grade;
-  return gradeQuiz;
+
 }
 
 
