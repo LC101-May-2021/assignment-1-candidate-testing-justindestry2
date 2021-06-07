@@ -42,20 +42,19 @@ function gradeQuiz(candidateAnswers) {
 // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 // 
 
-let grade = 0;
-let finalGrade = 0; 
+let grade = 0; 
 for (let i=0; i < 5; i++){
     if (candidateAnswers[i].toLowerCase() == correctAnswers[i].toLowerCase()){
-      // console.log(grade);
+      console.log(grade)
       grade++
       
     }
     
   }
 
-finalGrade = grade / questions.length * 5
 
-console.log((`>>> Overall Grade: ${finalGrade / 5 * 100} (${grade} of 5 responses correct) <<<`));
+
+console.log(`>>> Overall Grade: ${grade / questions.length * 100} (${grade} of 5 responses correct) <<<`);
   if (grade/questions.length * 100 >= 80){
     console.log(">>> Status: PASSED <<<")
   } else {
@@ -63,8 +62,8 @@ console.log((`>>> Overall Grade: ${finalGrade / 5 * 100} (${grade} of 5 response
     
   }
   
-console.log(grade);
-return grade;
+   
+  return grade;
 
 }
 
