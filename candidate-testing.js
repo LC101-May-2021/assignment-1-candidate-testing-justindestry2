@@ -59,7 +59,7 @@ console.log(`>>> Overall Grade: ${grade / questions.length * 100} (${grade} of 5
     console.log(">>> Status: FAILED <<<")
   }
   
-     
+console.log(gradeQuiz);     
   return grade;
 }
 
